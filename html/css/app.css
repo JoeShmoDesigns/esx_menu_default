@@ -1,0 +1,112 @@
+
+@keyframes example {
+    0% {background-color: red;}
+    15% {background-color: orange;}
+    30% {background-color: yellow;}
+    45% {background-color: green;}
+    60% {background-color: blue;}
+    75% {background-color: indigo;}
+    90% {background-color: violet;}
+  }
+
+
+@font-face {
+	font-family: bankgothic;
+	src: url('../fonts/bankgothic.ttf');
+}
+
+@font-face {
+	font-family: pcdown;
+	src: url('../fonts/pdown.ttf');
+}
+
+.menu {
+	font-family: bankgothic;
+	min-width: 275px;
+	color: #fff;
+	position: absolute;
+}
+
+.menu.align-left {
+	left: 40;
+	top: 50%;
+	transform: translate(0, -50%);
+}
+
+.menu.align-top-left {
+	left: 40;
+	top: 40;
+}
+
+.menu.align-top {
+	left: 50%;
+	top: 40;
+	transform: translate(-50%, 0);
+}
+
+.menu.align-top-right {
+	right: 10;
+	top: 40;
+}
+
+.menu.align-right {
+	right: 40;
+	top: 50%;
+	transform: translate(0, -50%);
+}
+
+.menu.align-bottom-right {
+	right: 40;
+	bottom: 40;
+}
+
+.menu.align-bottom {
+	left: 50%;
+	bottom: 40;
+	transform: translate(-50%, 0);
+}
+
+.menu.align-bottom-left {
+	left: 40;
+	bottom: 40;
+}
+
+.menu.align-center {
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.menu .head {
+	background-color: #000000;
+	text-align: center;
+	height: 40px;
+	line-height: 40px;
+        border-radius: 7px;
+}
+
+.menu .menu-items {
+	max-height: 600px;
+	overflow-y: auto;
+        margin: 8px;
+}
+
+.menu .menu-items .menu-item {
+	display: block;
+	height: 32px;
+	line-height: 32px;
+	color: #FFFFFF;
+	text-align: center;
+        border-radius: 7px;
+        margin: 2px;
+background: rgb(255,255,255);
+background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(0,0,0,1) 61%);
+}
+
+.menu .menu-items .menu-item.selected {
+	background-color: #d0d0d0;
+        margin: 5px;
+        animation-name: example;
+        animation-duration: 3s;
+        animation-iteration-count: infinite; 
+}
